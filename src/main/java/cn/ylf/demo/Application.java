@@ -9,6 +9,11 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
 
+/**
+ * 添加了SpringBootApplication注解后
+ * spring-boot 会自动扫描@SpringBootApplication所在类的同级包以及下级包里的Bean
+ * 若为jpa项目还可以扫描标注@Entity的实体类
+ */
 @SpringBootApplication
 public class Application {
 
